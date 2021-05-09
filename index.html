@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body id="target">
+
+<p>Нажмите на любую стрелочку</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).keydown(function(e) {
+  if (e.which == 37) {
+    alert(e.keyCode );
+  }else if(e.which == 38){
+    alert("Нажата up arrow");
+  }
+  else if(e.which == 39){
+     alert("Нажата right arrow");
+  }
+  else if(e.which == 40){
+    alert("Нажата down arrow");
+  }
+});
+</script>
+</body>
+</html>
